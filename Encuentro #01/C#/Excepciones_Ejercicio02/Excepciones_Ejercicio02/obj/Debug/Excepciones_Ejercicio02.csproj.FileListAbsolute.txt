@@ -1,0 +1,12 @@
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/bin/Debug/Excepciones_Ejercicio02.exe
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/bin/Debug/Excepciones_Ejercicio02.pdb
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.csprojAssemblyReference.cache
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.csproj.CoreCompileInputs.cache
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.exe
+/home/derian-cordoba/RiderProjects/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.pdb
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/bin/Debug/Excepciones_Ejercicio02.exe
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/bin/Debug/Excepciones_Ejercicio02.pdb
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.csprojAssemblyReference.cache
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.csproj.CoreCompileInputs.cache
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.exe
+/home/derian-cordoba/Documentos/Universidad/TERCER AÑO/PRIMER SEMESTRE/Programacion Orientada Objetos/Laboratorio de POO/Parcial 2/Clase 16/Excepciones_Ejercicio02/Excepciones_Ejercicio02/obj/Debug/Excepciones_Ejercicio02.pdb
