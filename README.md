@@ -38,8 +38,8 @@ import java.rmi.Registry; //Registry es una interfaz remota para un registro de 
 ```
 
 ## Temas abordados
-> Encuentro #01 => Principios de POO. [Enlaces de los ejercicios del primer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2301).
+- [x] Encuentro #01 => Principios de POO. [Enlaces de los ejercicios del primer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2301).
 
-> Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
+- [] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
 
-> Proximo encuentro => **_26/05/2021_**
+- Proximo encuentro => **_26/05/2021_**
