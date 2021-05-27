@@ -7,10 +7,10 @@
 <br>
 
 ## Lenguaje a usar
->La asignatura se vera implementada bajo el lenguaje de programacion Java, aplicacndo tecnicas sobre envio de objetos por red o serializacion de los mismos.
+>La asignatura se vera implementada bajo el lenguaje de programacion Java, aplicando tecnicas sobre envio de objetos por red o serializacion de los mismos.
 
 ## Kit de desarrollo
-- El software recomandado para el desarrollo de las actividades y practicas sera NetBeans. 
+- El software recomandado para el desarrollo de las actividades y practicas sera NetBeans, pero esto queda a criterio del estudiante.
 
 - Sistema operativo que utilice el kernel de linux (Ubuntu, Debian, etc).
 
@@ -40,6 +40,8 @@ import java.rmi.Registry; //Registry es una interfaz remota para un registro de 
 ## Temas abordados
 - [x] Encuentro #01 => Principios de POO. [Enlaces de los ejercicios del primer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2301).
 
-- [ ] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
+- [X] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
 
-- Proximo encuentro => **_26/05/2021_**
+- [ ] Encuentro #03 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del tercer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/)
+
+- Proximo encuentro => **_02/06/2021_**
