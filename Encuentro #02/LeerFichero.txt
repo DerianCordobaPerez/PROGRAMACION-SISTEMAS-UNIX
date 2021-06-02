@@ -1,0 +1,12 @@
+public static String getContentFile() {
+        try {
+            File file = new File("/proc/loadavg");
+            BufferedReader bufferedReader = null;
+            if(file.canRead() && file.isFile())
+                bufferedReader = new BufferedReader(new FileReader(file));
+            return bufferedReader != null ? bufferedReader.readLine() : null;
+        } catch (IOException e ) {
+            e.printStackTrace();
+        }
+        return null;
+    }
