@@ -42,6 +42,12 @@ import java.rmi.Registry; //Registry es una interfaz remota para un registro de 
 
 - [X] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
 
-- [ ] Encuentro #03 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del tercer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/)
+- [X] Encuentro #03 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del tercer encuentro](https://github.com/DerianCordobaPerez/)PROGRAMACION-SISTEMAS-UNIX/Encuentro%20%2302)
 
-- Proximo encuentro => **_02/06/2021_**
+- [X] Encuentro #04 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del cuarto encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/Encuentro%20%2302)
+
+- [X] Encuentro #05 => No hubo clase
+
+- [X] Encuentro #06 => Programacion visual en java (Clase practica) [Enlaces de los ejercicios del sexto encuentro]()
+
+- Proximo encuentro => **_23/06/2021_**
