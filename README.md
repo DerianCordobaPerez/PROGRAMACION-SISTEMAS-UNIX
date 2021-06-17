@@ -40,14 +40,14 @@ import java.rmi.Registry; //Registry es una interfaz remota para un registro de 
 ## Temas abordados
 - [x] Encuentro #01 => Principios de POO. [Enlaces de los ejercicios del primer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2301).
 
-- [X] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302)
+- [X] Encuentro #02 => Principios de RMI. [Enlaces de los ejercicios del segundo encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302%2C%20%2303%2C%20%2304)
 
-- [X] Encuentro #03 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del tercer encuentro](https://github.com/DerianCordobaPerez/)PROGRAMACION-SISTEMAS-UNIX/Encuentro%20%2302)
+- [X] Encuentro #03 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del tercer encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302%2C%20%2303%2C%20%2304)
 
-- [X] Encuentro #04 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del cuarto encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/Encuentro%20%2302)
+- [X] Encuentro #04 => Continuacion RMI (Clase practica) [Enlaces de los ejercicios del cuarto encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2302%2C%20%2303%2C%20%2304)
 
 - [X] Encuentro #05 => No hubo clase
 
-- [X] Encuentro #06 => Programacion visual en java (Clase practica) [Enlaces de los ejercicios del sexto encuentro]()
+- [X] Encuentro #06 => Programacion visual en java (Clase practica) [Enlaces de los ejercicios del sexto encuentro](https://github.com/DerianCordobaPerez/PROGRAMACION-SISTEMAS-UNIX/tree/Master/Encuentro%20%2306)
 
 - Proximo encuentro => **_23/06/2021_**
