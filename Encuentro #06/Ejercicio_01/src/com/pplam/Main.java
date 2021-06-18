@@ -1,10 +1,13 @@
 package com.pplam;
 
 import javax.swing.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.util.Arrays;
+
+/**
+ * @author derian-cordoba - 16/6/21
+ * @project Ejercicio_01
+ */
 
 public class Main extends JFrame {
     private final JButton boton = new JButton("Presioname");
@@ -13,6 +16,10 @@ public class Main extends JFrame {
     private final JTextField caja = new JTextField();
     private final JPanel panelPrincipal = new JPanel();
 
+
+    /**
+     * Constructor Main
+     */
     public Main() {
         this.boton.setEnabled(false);
         this.creacionPanel();
@@ -24,6 +31,9 @@ public class Main extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
+    /**
+     * Creacion del panel principal
+     */
     public void creacionPanel() {
         this.panelPrincipal.setLayout(new GridLayout(4, 5));
         this.agregarComponentes();
@@ -32,36 +42,45 @@ public class Main extends JFrame {
         this.setResizable(false);
     }
 
+    /**
+     * creacion de una lista donde agregaremos los componentes al panel principal
+     */
     public void agregarComponentes() {
         Arrays.asList(this.label, this.caja, this.boton, this.advertencia).forEach(this.panelPrincipal::add);
     }
 
+
+    /**
+     * Agregamos el evento al boton
+     */
     public void eventoBoton() {
         this.boton.addActionListener(e -> JOptionPane.showMessageDialog(this, this.caja.getText()));
     }
 
+    /**
+     * Agregamos los evento sobre la caja de texto usando una interfaz funcional
+     */
     public void eventoCajaTexto() {
-        this.caja.getDocument().addDocumentListener(new DocumentListener() {
-            @Override
-            public void insertUpdate(DocumentEvent e) {
-                validacionBoton();
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                validacionBoton();
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent e) {
-                validacionBoton();
-            }
-        });
+        this.caja.getDocument().addDocumentListener((CambioTexto)(t, e) -> this.validacionEventos());
     }
 
-    private void validacionBoton() {
+    /**
+     * Establecemos el comportamiento de los componentes sobre los eventos
+     */
+    public void validacionEventos() {
         this.boton.setEnabled(this.caja.getText().length() > 0);
-        this.advertencia.setVisible(this.caja.getText().length() == 0);
+        this.advertencia.setForeground(
+                this.caja.getText().length() == 0
+                        ? Color.RED
+                        // Estamos aninando ternarios uno dentro de otro
+                        // Esto corresponderia con un else if siendo el ultimo el else del condicional
+                        : (this.caja.getText().length() > 50 ? Color.GREEN : Color.BLACK)
+        );
+        this.advertencia.setText(
+                this.caja.getText().length() > 0
+                        ? "La longitud de la cadena de texto es " + this.caja.getText().length()
+                        : "No hay texto en en la caja"
+        );
     }
 
     public static void main(String[] args) {
