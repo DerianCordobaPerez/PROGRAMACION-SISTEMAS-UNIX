@@ -1,6 +1,8 @@
 package com.pplam;
 
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.util.Arrays;
 
@@ -15,7 +17,6 @@ public class Main extends JFrame {
     private final JLabel advertencia = new JLabel("No hay texto en en la caja");
     private final JTextField caja = new JTextField();
     private final JPanel panelPrincipal = new JPanel();
-
 
     /**
      * Constructor Main
@@ -49,7 +50,6 @@ public class Main extends JFrame {
         Arrays.asList(this.label, this.caja, this.boton, this.advertencia).forEach(this.panelPrincipal::add);
     }
 
-
     /**
      * Agregamos el evento al boton
      */
@@ -61,7 +61,7 @@ public class Main extends JFrame {
      * Agregamos los evento sobre la caja de texto usando una interfaz funcional
      */
     public void eventoCajaTexto() {
-        this.caja.getDocument().addDocumentListener((CambioTexto)(t, e) -> this.validacionEventos());
+        this.caja.getDocument().addDocumentListener((CambioTextoFuncional)(t, e) -> this.validacionEventos());
     }
 
     /**
