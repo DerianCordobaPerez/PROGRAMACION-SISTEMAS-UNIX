@@ -12,26 +12,23 @@ import java.io.*;
 public final class VentanaArchivo {
     private final JFileChooser ventanaArchivo = new JFileChooser("f:");
 
-    public String abrirArchivo() {
+    public void abrirArchivo(EditorVista editorVista) {
         if(this.ventanaArchivo.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
             try {
-                String linea, contenido;
+                String linea;
                 BufferedReader buffer = new BufferedReader(new FileReader(this.ventanaArchivo.getSelectedFile().getAbsolutePath()));
 
-                contenido = buffer.readLine();
+                editorVista.textArea.setText("");
                 while((linea = buffer.readLine()) != null)
-                    contenido = String.format("%s\n%s", contenido, linea);
-
-                return contenido;
+                    editorVista.textArea.append(String.format("%s\n", linea));
             } catch (Exception exception) {
                 exception.printStackTrace();
             }
         }
-        return null;
     }
 
     public void guardarArchivo(EditorVista editorVista) throws IOException {
-        if(this.ventanaArchivo.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        if(this.ventanaArchivo.showSaveDialog(editorVista) == JFileChooser.APPROVE_OPTION) {
             BufferedWriter escritor = new BufferedWriter(new FileWriter(this.ventanaArchivo.getSelectedFile().getAbsolutePath()));
             escritor.write(editorVista.textArea.getText());
             escritor.flush();

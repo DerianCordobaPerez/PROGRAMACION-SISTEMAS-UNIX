@@ -30,14 +30,14 @@ public record MenuArchivoControlador(EditorVista editorVista) implements ActionL
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         if(e.getActionCommand().equalsIgnoreCase("Nuevo")) {
+            if(this.guardarArchivoConAlerta()) return;
             this.editorVista.textArea.setText("");
         }
 
         if(e.getActionCommand().equalsIgnoreCase("Abrir")) {
-            assert new VentanaArchivo().abrirArchivo() != null;
-            this.editorVista.textArea.setText(new VentanaArchivo().abrirArchivo());
+            if (this.guardarArchivoConAlerta()) return;
+            new VentanaArchivo().abrirArchivo(this.editorVista);
         }
 
         if(e.getActionCommand().equalsIgnoreCase("Guardar")) {
@@ -60,10 +60,23 @@ public record MenuArchivoControlador(EditorVista editorVista) implements ActionL
         }
 
         if(e.getActionCommand().equalsIgnoreCase("Cerrar")) {
-            if(this.editorVista.textArea.getText().length() <= 0) {
-                this.editorVista.dispose();
-                System.exit(0);
-            }
+            if (this.guardarArchivoConAlerta()) return;
+            this.editorVista.dispose();
+            System.exit(0);
         }
+    }
+
+    private boolean guardarArchivoConAlerta() {
+        if(this.editorVista.textArea.getText().length() > 0) {
+            int opcion = JOptionPane.showConfirmDialog(this.editorVista, "Quieres guardar el documento");
+            if(opcion == JOptionPane.OK_OPTION)
+                try {
+                    new VentanaArchivo().guardarArchivo(this.editorVista);
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                }
+            else return opcion == JOptionPane.CANCEL_OPTION;
+        }
+        return false;
     }
 }

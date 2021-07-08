@@ -25,7 +25,8 @@ public class EditorVista extends JFrame {
     public final JMenuBar barraMenu = new JMenuBar();
     public final JMenu menuArchivo = new JMenu("Archivo"), menuHerramientas = new JMenu("Herramientas");
     public final JMenuItem nuevoMenuArchivo = new JMenuItem("Nuevo"), abrirMenuArchivo = new JMenuItem("Abrir"), guardarMenuArchivo = new JMenuItem("Guardar"), imprimirMenuArchivo = new JMenuItem("Imprimir"), cerrarMenuArchivo = new JMenuItem("Cerrar");
-    public final JCheckBoxMenuItem deshabilitarBarraSuperior = new JCheckBoxMenuItem("Deshabilitar menu superior");
+    public final JMenuItem buscarMenuHerramientas = new JMenuItem("Buscar"), cambiarColorMenuHerramientas = new JMenuItem("Cambiar color del fondo");
+    public final JCheckBoxMenuItem deshabilitarBarraSuperiorMenuHerramientas = new JCheckBoxMenuItem("Deshabilitar menu superior");
     public final JToolBar barraSuperior = new JToolBar();
     private final JPanel panelPrincipal = new JPanel(), barraEstado = new JPanel();
     private final JScrollPane panelScroll = new JScrollPane(this.textArea);
@@ -81,8 +82,8 @@ public class EditorVista extends JFrame {
     }
 
     private void agregarMenuItems() {
-        Arrays.asList(this.nuevoMenuArchivo, this.abrirMenuArchivo, this.guardarMenuArchivo, new JPopupMenu.Separator(), this.imprimirMenuArchivo, new JPopupMenu.Separator(), this.cerrarMenuArchivo).forEach(this.menuArchivo::add);
-        Arrays.asList(this.deshabilitarBarraSuperior).forEach(this.menuHerramientas::add);
+        Arrays.asList(this.nuevoMenuArchivo, this.abrirMenuArchivo, this.guardarMenuArchivo, new JSeparator(), this.imprimirMenuArchivo, new JSeparator(), this.cerrarMenuArchivo).forEach(this.menuArchivo::add);
+        Arrays.asList(this.buscarMenuHerramientas, this.cambiarColorMenuHerramientas, new JSeparator(), this.deshabilitarBarraSuperiorMenuHerramientas).forEach(this.menuHerramientas::add);
     }
 
     private void agregarFuentes() {
